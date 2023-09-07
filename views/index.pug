@@ -23,11 +23,15 @@ block content
                 each dropdownOption in dropdownOptions
                   option(value=dropdownOption.value)= dropdownOption.name
               
-          label.slds-form-element__label.slds-p-top_medium(for='Text1')
+          label.slds-form-element__label.slds-p-top_medium(for='Text')
             abbr.slds-required(title='required')
-            | Textkjlj *
+            | 씨발 *
           .slds-form-element__control
+            input#Text.slds-input.js-activity-setting(required='', placeholder='', name='text')
+           .slds-form-element__control
             input#Text1.slds-input.js-activity-setting(required='', placeholder='', name='text1')
+           .slds-form-element__control
+            input#Text2.slds-input.js-activity-setting(required='', placeholder='', name='text2')
 
 
 
