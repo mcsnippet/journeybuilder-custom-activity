@@ -32,6 +32,10 @@ exports.ui = (req, res) => {
         name: 'Journey Exit',
         value: 'journeyExit',
       },
+      {
+        name: '몰라 씨발',
+        value: 'someValue',
+      },
     ],
   });
 };
