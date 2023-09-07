@@ -28,10 +28,14 @@ block content
             | 씨발 *
           .slds-form-element__control
             input#Text.slds-input.js-activity-setting(required='', placeholder='', name='text')
-           .slds-form-element__control
-            input#Text1.slds-input.js-activity-setting(required='', placeholder='', name='text1')
-           .slds-form-element__control
-            input#Text2.slds-input.js-activity-setting(required='', placeholder='', name='text2')
+
+ label.slds-form-element__label(for="DropdownOptions") Type
+          .slds-form-element__control
+            .slds-select_container
+              select#DropdownOptions.slds-select.js-activity-setting(name='dropdownOptions')
+                each dropdownOption in dropdownOptions
+                  option(value=dropdownOption.value)= dropdownOption.name
+          
 
 
 
