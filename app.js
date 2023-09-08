@@ -83,3 +83,7 @@ app.use((err, req, res, next) => {
 });
 
 module.exports = app;
+/*
+This line exports the app instance, making it available for use in other parts of your application or in the entry point of your server script. 
+This allows you to start the Express.js server and listen for incoming HTTP requests using this app instance.
+*/
