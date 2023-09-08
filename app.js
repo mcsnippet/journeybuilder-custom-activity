@@ -23,12 +23,13 @@ app.use(
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'html');
+app.set('view engine', 'pug');
 
+/*
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'views', 'index.html'));
 });
-
+*/
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
