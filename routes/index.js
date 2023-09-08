@@ -34,7 +34,7 @@ It uses the res.render method to render a view named "index" (presumably a Pug t
 */
 exports.ui = (req, res) => {
   res.render('index', {
-    title: 'Custom Activity',
+    title: 'Custom Tofu',
     dropdownOptions: [
       {
         name: 'Journey Entry',
